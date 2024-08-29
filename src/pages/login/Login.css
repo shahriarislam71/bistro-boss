@@ -1,0 +1,32 @@
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.Loginbackground {
+    background: url(../../assets/others/authentication.png) lightgray 50% / cover no-repeat;
+}
+
+.insideLogin {
+    background: url(../../assets/others/authentication.png) lightgray 50% / cover no-repeat;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.setbackgroundImage {
+    background: url(../../assets/others/authentication1.png) lightgray 50% / cover no-repeat;
+    padding-top: 195px;
+}
+
+.button {
+    border-radius: 8px;
+    background: rgba(209, 160, 84, 0.70);
+}
