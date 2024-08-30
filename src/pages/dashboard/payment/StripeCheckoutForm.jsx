@@ -17,7 +17,7 @@ const StripeCheckoutForm = ({ cart, price }) => {
 
     useEffect(() => {
         if (price > 0) {
-            fetch('http://localhost:5000/create-payment-intent', {
+            fetch('https://bistro-boss-server-mauve-nine.vercel.app/create-payment-intent', {
                 method: "POST",
                 headers: {
                     'content-type': "application/json",
@@ -88,7 +88,7 @@ const StripeCheckoutForm = ({ cart, price }) => {
                 orderId: cart.map(data => data.orderId),
                 itemsName: cart.map(items => items.name)
             }
-            fetch('http://localhost:5000/payment', {
+            fetch('https://bistro-boss-server-mauve-nine.vercel.app/payment', {
                 method: "POST",
                 headers: {
                     'content-type': "application/json",

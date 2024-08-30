@@ -19,7 +19,7 @@ const ManageItems = () => {
             confirmButtonText: "Yes, delete it!"
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/menu/${id}`,{
+                fetch(`https://bistro-boss-server-mauve-nine.vercel.app/menu/${id}`,{
                     method : "DELETE",
                     headers : {
                         "Authorization" : `bearer ${token}`

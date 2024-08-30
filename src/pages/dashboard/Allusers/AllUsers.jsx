@@ -10,7 +10,7 @@ const AllUsers = () => {
     const { data: user = [], refetch } = useQuery({
         queryKey: ['user'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/user', {
+            const res = await fetch('https://bistro-boss-server-mauve-nine.vercel.app/user', {
                 headers: {
                     authorization: `bearer ${token}`
                 }
@@ -20,7 +20,7 @@ const AllUsers = () => {
     })
     console.log(user)
     const handleMakingAdmin = (user) => {
-        fetch(`http://localhost:5000/user/admin/${user._id}`, {
+        fetch(`https://bistro-boss-server-mauve-nine.vercel.app/user/admin/${user._id}`, {
             method: "PATCH"
         })
             .then(res => res.json())

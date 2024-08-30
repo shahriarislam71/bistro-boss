@@ -20,7 +20,7 @@ const Register = () => {
                 const user = userCredential.user
                 console.log(user)
                 // this fetch is used for storing farther information of the user  
-                fetch('http://localhost:5000/user', {
+                fetch('https://bistro-boss-server-mauve-nine.vercel.app/user', {
                     method: "POST",
                     headers: { 'Content-type': "application/json" },
                     body: JSON.stringify(usersValue)
@@ -51,7 +51,7 @@ const Register = () => {
                 photofiledValue : user.photoURL,
                 emailFieldValue : user.email
             }
-            fetch('http://localhost:5000/user', {
+            fetch('https://bistro-boss-server-mauve-nine.vercel.app/user', {
                 method: "POST",
                 headers: { 'Content-type': "application/json" },
                 body: JSON.stringify(usersValue)

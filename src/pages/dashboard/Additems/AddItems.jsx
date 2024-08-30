@@ -30,7 +30,7 @@ const AddItems = () => {
                     const { name, recipe, category, price } = data
                     const formData = { name, recipe, image: imgURL, category, price: parseFloat(price) }
                     console.log(formData)
-                    fetch('http://localhost:5000/menu', {
+                    fetch('https://bistro-boss-server-mauve-nine.vercel.app/menu', {
                         method: "POST",
                         headers: {
                             'Content-Type': 'application/json',

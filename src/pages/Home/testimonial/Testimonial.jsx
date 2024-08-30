@@ -11,7 +11,7 @@ import { Rating } from '@smastrom/react-rating';
 const Testimonial = () => {
     const [ratingsData, setRatingsData] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://bistro-boss-server-mauve-nine.vercel.app/review')
             .then(res => res.json())
             .then(data => setRatingsData(data))
     }, [])

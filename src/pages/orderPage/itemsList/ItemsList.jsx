@@ -14,7 +14,7 @@ const ItemsList = ({item}) => {
         console.log(user.email)
         const orderedItems = {orderId : items._id, name : items.name, price : items.price, image : items.image, category : items.category, email : user.email}
         if(user && user.email){
-            fetch('http://localhost:5000/carts',{
+            fetch('https://bistro-boss-server-mauve-nine.vercel.app/carts',{
                 method : "POST",
                 headers : {
                     "Content-type" : "application/json"

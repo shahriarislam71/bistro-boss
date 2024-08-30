@@ -10,7 +10,7 @@ const UserHome = () => {
     const {data : status ={}, refetch} = useQuery({
         queryKey : ['admin-stats'],
         queryFn : async()=>{
-            const data = await fetch('http://localhost:5000/admin-stats',{
+            const data = await fetch('https://bistro-boss-server-mauve-nine.vercel.app/admin-stats',{
                 headers : {
                     'authorization' : `bearer ${token}`
                 }

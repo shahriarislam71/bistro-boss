@@ -55,7 +55,7 @@ const Login = () => {
                 photofiledValue : user.photoURL,
                 emailFieldValue : user.email
             }
-            fetch('http://localhost:5000/user', {
+            fetch('https://bistro-boss-server-mauve-nine.vercel.app/user', {
                 method: "POST",
                 headers: { 'Content-type': "application/json" },
                 body: JSON.stringify(usersValue)

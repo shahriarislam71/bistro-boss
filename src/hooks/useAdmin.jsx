@@ -8,7 +8,7 @@ const useAdmin = () => {
     const {refetch, data:isAdmin=''} = useQuery({
         queryKey : ['admin',user?.email],
         queryFn : async()=>{
-            const data = await fetch(`http://localhost:5000/user/admin/${user?.email}`,{
+            const data = await fetch(`https://bistro-boss-server-mauve-nine.vercel.app/user/admin/${user?.email}`,{
                 headers : {
                     authorization : `bearer ${token}`
                 }

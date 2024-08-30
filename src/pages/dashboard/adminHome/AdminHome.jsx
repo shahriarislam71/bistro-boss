@@ -11,7 +11,7 @@ const AdminHome = () => {
     const { data: status = {}, refetch } = useQuery({
         queryKey: ['admin-stats'],
         queryFn: async () => {
-            const data = await fetch('http://localhost:5000/admin-stats', {
+            const data = await fetch('https://bistro-boss-server-mauve-nine.vercel.app/admin-stats', {
                 headers: {
                     'authorization': `bearer ${token}`
                 }
@@ -22,7 +22,7 @@ const AdminHome = () => {
     const { data: chartData = [] } = useQuery({
         queryKey: ['chart-data'],
         queryFn: async () => {
-            const data = await fetch('http://localhost:5000/order-stats', {
+            const data = await fetch('https://bistro-boss-server-mauve-nine.vercel.app/order-stats', {
                 headers: {
                     'authorization': `bearer ${token}`
                 }
